@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    border-radius: 80px;
+    background: lightblue;
+    color: whitesmoke;
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    border: solid white;
+    grid-auto-flow: row dense;
+    font-family: 'Courier New', Courier, monospace;
+    align-content: space-evenly;
+    gap: 3vw;
+    padding: 8vh;
+}
+
+
+h2,
+div {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.weather {
+    border-radius: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    background: rgba(84, 183, 245, 0.568);
+    border: solid 1px whitesmoke;
+}
+
+input#location {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+input:invalid {
+    color: red;
+}
+
+span {
+    font-size: small;
+}
+
+div.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: space-between;
+    align-self: stretch;
+    row-gap: 5px;
+}
+
+#temperature-div {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-self: stretch;
+}
+
+
+
+#description {
+    grid-row: 4;
+    grid-column: span 4;
+    text-align: center;
+}
+
+#uv-div,
+#humidity-div,
+#feels-div,
+#precipitation-div {
+    grid-row: 3;    
+}

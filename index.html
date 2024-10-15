@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <h1>My Weather App</h1>
+        <h3 id="location-div"></h3>
+        <span id="date"></span>
+        <form class ="weather">
+            <div class="input-div">
+                <label for="location">Location: </label>
+            <input type="text" id="location" required>
+            </div>
+
+            <fieldset>
+                <legend>Unit</legend>
+            <label for="metric" id ="metric" name="unit">Metric</label><input type="radio" id="metric" value="metric" name="unit">
+            <label for="us" id="us" name="unit">Farenheit</label><input type="radio" id="us"value="us" name="unit">
+                </fieldset>
+        </form>
+    </header>
+    <div class="info">
+        <div id="temperature-div">
+            <img id = "temperature-image" alt="An icon representing the current weather.">
+            <h1 id="temperature"></h1>
+            <span id="condition"></span>
+        </div>
+        <div id="humidity-div"></div>
+        <div id="feels-div"></div>
+        <div id="uv-div"></div>
+        <div id="description"></div>
+        <div id="precipitation-div"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
